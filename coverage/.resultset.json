@@ -16,10 +16,14 @@
           null,
           null,
           1,
+          1,
+          null,
+          null,
+          1,
           null
         ]
       },
-      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/features/setup_spec.rb": {
+      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -28,8 +32,20 @@
           null,
           null
         ]
+      },
+      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/features/list_bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1633962766
+    "timestamp": 1633963502
   }
 }
