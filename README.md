@@ -6,6 +6,7 @@ A functioning bookmark manager that allows a user to view, add, update and delet
 bundle install
 rackup
 ```
+To set up the database:
 ```
 psql
 => CREATE DATABASE bookmark_manager
