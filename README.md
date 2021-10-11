@@ -1,5 +1,13 @@
 # Bookmark Manager
 
+A functioning bookmark manager that allows a user to view, add, update and delete bookmarks
+
+```
+bundle install
+rackup
+```
+## User Stories
+
 ```
 As a user
 So that I can see all of my bookmarks
