@@ -6,12 +6,24 @@ A functioning bookmark manager that allows a user to view, add, update and delet
 bundle install
 rackup
 ```
+```
+psql
+=> CREATE DATABASE bookmark_manager
+=> \c bookmark_manager
+```
+Run the queries in `db/migrations` in order
+
 ## User Stories
 
 ```
 As a user
 So that I can see all of my bookmarks
 I want to be able to list them
+```
+```
+As a user
+So that I can save a website
+I would like to add a site's address and title to the bookmark manager
 ```
 ![Sequence Diagram](https://drive.google.com/uc?export=view&id=1X71JC8pvlVaI8QYUA4i51mvQq3B_ysUe)
 
