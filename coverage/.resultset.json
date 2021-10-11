@@ -1,0 +1,35 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/danmarshall/Documents/Makers/bookmark-manager/app.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/features/setup_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1633962766
+  }
+}
