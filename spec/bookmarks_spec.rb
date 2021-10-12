@@ -15,4 +15,11 @@ describe Bookmarks do
     expect(bookmarks).to include("http://www.destroyallsoftware.com/")
     expect(bookmarks).to include("http://www.google.com/")
   end
+
+  describe '#create' do
+    it 'creates a new bookmark' do
+      described_class.create('http://www.facebook.com')
+      expect(described_class.all).to include('http://www.facebook.com')
+    end
+  end
 end
