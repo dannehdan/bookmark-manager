@@ -18,7 +18,9 @@ You will also need to create a test database for running tests
 ```
 psql
 => CREATE DATABASE bookmark_manager_test
+=> \c bookmark_manager_test
 ```
+And run the SQL scripts in `db/migrations` in order
 
 ## User Stories
 
