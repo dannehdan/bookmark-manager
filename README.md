@@ -14,6 +14,12 @@ psql
 ```
 Run the SQL scripts in `db/migrations` in order
 
+You will also need to create a test database for running tests
+```
+psql
+=> CREATE DATABASE bookmark_manager_test
+```
+
 ## User Stories
 
 ```
