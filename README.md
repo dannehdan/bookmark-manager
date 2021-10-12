@@ -12,7 +12,7 @@ psql
 => CREATE DATABASE bookmark_manager
 => \c bookmark_manager
 ```
-Run the queries in `db/migrations` in order
+Run the SQL scripts in `db/migrations` in order
 
 ## User Stories
 

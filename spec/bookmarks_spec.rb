@@ -2,6 +2,10 @@ require './lib/bookmarks'
 
 describe Bookmarks do
   it 'should return a list of bookmarks' do
-    expect(described_class.all).to eq(["Google - google.com", "Facebook - facebook.com"])
+    bookmarks = Bookmarks.all
+
+    expect(bookmarks).to include("http://www.makersacademy.com/")
+    expect(bookmarks).to include("http://www.destroyallsoftware.com/")
+    expect(bookmarks).to include("http://www.google.com/")
   end
 end
