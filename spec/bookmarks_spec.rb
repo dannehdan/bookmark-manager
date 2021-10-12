@@ -2,12 +2,10 @@ require './lib/bookmarks'
 
 describe Bookmarks do
   it 'should return a list of bookmarks' do
-    connection = PG.connect(dbname: 'bookmark_manager_test')
-
     # Add the test data
-    connection.exec("INSERT INTO bookmarks (url) VALUES ('http://www.makersacademy.com/');")
-    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.destroyallsoftware.com/');")
-    connection.exec("INSERT INTO bookmarks (url) VALUES('http://www.google.com/');")
+    Bookmarks.create('http://www.makersacademy.com/')
+    Bookmarks.create('http://www.destroyallsoftware.com/')
+    Bookmarks.create('http://www.google.com/')
 
     bookmarks = Bookmarks.all
 
