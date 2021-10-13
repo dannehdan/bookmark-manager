@@ -3,9 +3,13 @@
 </head>
 <body>
   <h1>Your bookmarks</h1>
-  <ul>
-  <% @bookmarks.each do |bookmark| %>
-    <li><a href="<%= bookmark[:url] %>"><%= bookmark[:title]%></a></li>
-  <% end %>
-  </ul>
+  <div class="container">
+    <ul>
+    <% @bookmarks.each do |bookmark| %>
+      <li><a href="<%= bookmark[:url] %>"><%= bookmark[:title]%></a></li>
+    <% end %>
+    <br>
+     <button type='button'><a href='/'>Back to Home</a></button>
+    </ul>
+  </div>
 </body>
