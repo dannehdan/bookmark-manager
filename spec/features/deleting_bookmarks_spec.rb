@@ -6,10 +6,11 @@ feature 'Deleting bookmarks' do
     fill_in :title, with: 'Facebook'
     fill_in :url, with: 'http://www.facebook.com/'
     click_button('Add bookmark')
+
     visit('/bookmarks')
-    p Bookmarks.all
+    # p Bookmarks.all
     bookmark_id = "#delete-#{Bookmarks.all.last.id}"
-    save_and_open_page
+    # save_and_open_page
     page.find(bookmark_id).click
     expect(page).not_to have_content('Facebook')
   end

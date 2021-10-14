@@ -16,6 +16,6 @@ group :test do
   gem 'simplecov-console', require: false
 end
 
-group :development, :test dod
+group :development, :test do
   gem 'rubocop', '1.20'
 end

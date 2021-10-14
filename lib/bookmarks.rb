@@ -11,42 +11,29 @@ class Bookmarks
   end
 
   def self.all
-    if ENV['ENVIRONMENT'] == 'test'
-      con = PG.connect dbname: 'bookmark_manager_test'
-    else
-      con = PG.connect dbname: 'bookmark_manager'
-    end
-
+    con = Bookmarks.connect
     bookmarks = con.exec "SELECT * FROM bookmarks ORDER BY id ASC;"
-    bookmarks.map { |bookmark| 
-      
+    bookmarks.map do |bookmark| 
       Bookmarks.new(
         url: bookmark['url'], 
         title: bookmark['title'],
         id: bookmark['id']
       )
-    }
+    end
   end
 
   def self.create(url, title)
-    if ENV['ENVIRONMENT'] == 'test'
-      con = PG.connect dbname: 'bookmark_manager_test'
-    else
-      con = PG.connect dbname: 'bookmark_manager'
-    end
-
+    con = Bookmarks.connect
     con.exec_params("INSERT INTO bookmarks (url, title) VALUES ($1,$2);", [url, title])
   end
 
   def self.delete(id)
-    if ENV['ENVIRONMENT'] == 'test'
-      con = PG.connect dbname: 'bookmark_manager_test'
-    else
-      con = PG.connect dbname: 'bookmark_manager'
-    end
-    p id
-
+    con = Bookmarks.connect
     con.exec_params("DELETE FROM bookmarks WHERE id=$1;", [id[:id].to_i])
   end
+
+  def self.connect 
+    db_name = ENV['ENVIRONMENT'] == 'test' ? 'bookmark_manager_test' : 'bookmark_manager'
+    return PG.connect dbname: db_name
+  end
 end
- 
