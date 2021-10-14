@@ -57,8 +57,6 @@
           5,
           null,
           null,
-          null,
-          null,
           null
         ]
       },
@@ -134,10 +132,6 @@
         ]
       }
     },
-<<<<<<< HEAD
-    "timestamp": 1634217938
-=======
-    "timestamp": 1634217992
->>>>>>> 57369723cf33655ea4edddab0dc945251930d308
+    "timestamp": 1634218908
   }
 }
