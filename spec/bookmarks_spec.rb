@@ -26,6 +26,19 @@ describe Bookmarks do
 
   describe '#delete' do
     it 'deletes a bookmark' do
+      Bookmarks.create('http://www.makersacademy.com/', 'Makers Academy')
+      id = Bookmarks.all.last.id
+      Bookmarks.delete(id)
+      expect(Bookmarks.all.length).to eq 0
+    end
+  end
+
+  describe '#update' do
+    it 'updates a bookmark title' do
+      Bookmarks.create('http://www.makersacademy.com/', 'Makesr Academy')
+      id = Bookmarks.all.last.id
+      Bookmarks.update(id, 'Makers Academy')
+      expect(Bookmarks.all[0].title).to eq 'Makers Academy'
     end
   end
 end

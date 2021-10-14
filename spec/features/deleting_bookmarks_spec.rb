@@ -8,9 +8,7 @@ feature 'Deleting bookmarks' do
     click_button('Add bookmark')
 
     visit('/bookmarks')
-    # p Bookmarks.all
     bookmark_id = "#delete-#{Bookmarks.all.last.id}"
-    # save_and_open_page
     page.find(bookmark_id).click
     expect(page).not_to have_content('Facebook')
   end

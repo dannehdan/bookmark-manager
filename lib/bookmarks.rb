@@ -24,12 +24,17 @@ class Bookmarks
 
   def self.create(url, title)
     con = Bookmarks.connect
-    con.exec_params("INSERT INTO bookmarks (url, title) VALUES ($1,$2);", [url, title])
+    con.exec_params("INSERT INTO bookmarks (url, title) VALUES ($1, $2);", [url, title])
+  end
+
+  def self.update(id, new_title)
+    con = Bookmarks.connect
+    con.exec_params("UPDATE bookmarks SET title = $2 WHERE id = $1;", [id, new_title])
   end
 
   def self.delete(id)
     con = Bookmarks.connect
-    con.exec_params("DELETE FROM bookmarks WHERE id=$1;", [id[:id].to_i])
+    con.exec_params("DELETE FROM bookmarks WHERE id=$1;", [id])
   end
 
   def self.connect 

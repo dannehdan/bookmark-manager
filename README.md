@@ -39,6 +39,12 @@ As a user
 So that I can avoid storing old bookmarks
 I would like to be able to delete a bookmark
 ```
+```
+As a user
+So that I can modify my bookmarks
+I would like to be able to update a bookmark
+```
+
 ![Sequence Diagram](https://drive.google.com/uc?export=view&id=1X71JC8pvlVaI8QYUA4i51mvQq3B_ysUe)
 
 
