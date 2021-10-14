@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/danmarshall/Documents/Makers/bookmark-manager/app.rb": {
+      "/Users/iamsasha/Desktop/Projects/bookmark-manager/app.rb": {
         "lines": [
           1,
           1,
@@ -30,7 +30,7 @@
           null
         ]
       },
-      "/Users/danmarshall/Documents/Makers/bookmark-manager/lib/bookmarks.rb": {
+      "/Users/iamsasha/Desktop/Projects/bookmark-manager/lib/bookmarks.rb": {
         "lines": [
           1,
           null,
@@ -59,7 +59,7 @@
           null
         ]
       },
-      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/bookmarks_spec.rb": {
+      "/Users/iamsasha/Desktop/Projects/bookmark-manager/spec/bookmarks_spec.rb": {
         "lines": [
           1,
           null,
@@ -86,7 +86,7 @@
           null
         ]
       },
-      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/features/add_bookmark_spec.rb": {
+      "/Users/iamsasha/Desktop/Projects/bookmark-manager/spec/features/add_bookmark_spec.rb": {
         "lines": [
           1,
           1,
@@ -100,7 +100,7 @@
           null
         ]
       },
-      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/features/homepage_spec.rb": {
+      "/Users/iamsasha/Desktop/Projects/bookmark-manager/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -110,7 +110,7 @@
           null
         ]
       },
-      "/Users/danmarshall/Documents/Makers/bookmark-manager/spec/features/list_bookmarks_spec.rb": {
+      "/Users/iamsasha/Desktop/Projects/bookmark-manager/spec/features/list_bookmarks_spec.rb": {
         "lines": [
           1,
           1,
@@ -131,6 +131,6 @@
         ]
       }
     },
-    "timestamp": 1634139910
+    "timestamp": 1634217938
   }
 }

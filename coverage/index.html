@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-13T16:45:10+01:00">2021-10-13T16:45:10+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-14T14:25:38+01:00">2021-10-14T14:25:38+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -71,7 +71,7 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#d6291e5a9b09e8016c5984ce9032520a4fb379d5" class="src_link" title="app.rb">app.rb</a></td>
+            <td class="strong t-file__name"><a href="#eb6db36d773219e3694290497d0b1dc072b6f65a" class="src_link" title="app.rb">app.rb</a></td>
             <td class="green strong cell--number t-file__coverage">93.33 %</td>
             <td class="cell--number">25</td>
             <td class="cell--number">15</td>
@@ -82,7 +82,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#0fbff0d64e716eaaded97cc84d4fc71b2f0000e2" class="src_link" title="lib/bookmarks.rb">lib/bookmarks.rb</a></td>
+            <td class="strong t-file__name"><a href="#8c4b9474455ae0736cb28887838af93339a8d361" class="src_link" title="lib/bookmarks.rb">lib/bookmarks.rb</a></td>
             <td class="yellow strong cell--number t-file__coverage">84.62 %</td>
             <td class="cell--number">25</td>
             <td class="cell--number">13</td>
@@ -93,7 +93,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#db4fbf73b174bd16edf68e33c9c6915fb382655a" class="src_link" title="spec/bookmarks_spec.rb">spec/bookmarks_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#f8c65d6bce52dec564ff28ac2ade4f24b5713f4a" class="src_link" title="spec/bookmarks_spec.rb">spec/bookmarks_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">23</td>
             <td class="cell--number">14</td>
@@ -104,7 +104,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#a3500528582d38524541b38bf154c009cd1cc23b" class="src_link" title="spec/features/add_bookmark_spec.rb">spec/features/add_bookmark_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#2fa858dc778d7256562bba941e6bfade2f178dac" class="src_link" title="spec/features/add_bookmark_spec.rb">spec/features/add_bookmark_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">10</td>
             <td class="cell--number">8</td>
@@ -115,7 +115,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#5334eccc947b2df91244cef98f7603b8ae417910" class="src_link" title="spec/features/homepage_spec.rb">spec/features/homepage_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#1010c73df23501afc60aca457d9e21c8b9859b1e" class="src_link" title="spec/features/homepage_spec.rb">spec/features/homepage_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">6</td>
             <td class="cell--number">4</td>
@@ -126,7 +126,7 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#771ad6150d4d4768c5fa306ca54509fceaada3e9" class="src_link" title="spec/features/list_bookmarks_spec.rb">spec/features/list_bookmarks_spec.rb</a></td>
+            <td class="strong t-file__name"><a href="#efe43635164c7ee14d43b02ae0f87f8eb1516409" class="src_link" title="spec/features/list_bookmarks_spec.rb">spec/features/list_bookmarks_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">16</td>
             <td class="cell--number">10</td>
@@ -153,7 +153,7 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="d6291e5a9b09e8016c5984ce9032520a4fb379d5">
+        <div class="source_table" id="eb6db36d773219e3694290497d0b1dc072b6f65a">
   <div class="header">
     <h3>app.rb</h3>
     <h4>
@@ -459,7 +459,7 @@
 </div>
 
       
-        <div class="source_table" id="0fbff0d64e716eaaded97cc84d4fc71b2f0000e2">
+        <div class="source_table" id="8c4b9474455ae0736cb28887838af93339a8d361">
   <div class="header">
     <h3>lib/bookmarks.rb</h3>
     <h4>
@@ -734,7 +734,7 @@
 
             
 
-            <code class="ruby">    con.exec &quot;INSERT INTO bookmarks (url, title) VALUES (&#39;#{url}&#39;,&#39;#{title}&#39;)&quot;</code>
+            <code class="ruby">    con.exec_params(&quot;INSERT INTO bookmarks (url, title) VALUES ($1,$2);&quot;, [url, title])</code>
           </li>
         </div>
       
@@ -765,7 +765,7 @@
 </div>
 
       
-        <div class="source_table" id="db4fbf73b174bd16edf68e33c9c6915fb382655a">
+        <div class="source_table" id="f8c65d6bce52dec564ff28ac2ade4f24b5713f4a">
   <div class="header">
     <h3>spec/bookmarks_spec.rb</h3>
     <h4>
@@ -1049,7 +1049,7 @@
 </div>
 
       
-        <div class="source_table" id="a3500528582d38524541b38bf154c009cd1cc23b">
+        <div class="source_table" id="2fa858dc778d7256562bba941e6bfade2f178dac">
   <div class="header">
     <h3>spec/features/add_bookmark_spec.rb</h3>
     <h4>
@@ -1190,7 +1190,7 @@
 </div>
 
       
-        <div class="source_table" id="5334eccc947b2df91244cef98f7603b8ae417910">
+        <div class="source_table" id="1010c73df23501afc60aca457d9e21c8b9859b1e">
   <div class="header">
     <h3>spec/features/homepage_spec.rb</h3>
     <h4>
@@ -1287,7 +1287,7 @@
 </div>
 
       
-        <div class="source_table" id="771ad6150d4d4768c5fa306ca54509fceaada3e9">
+        <div class="source_table" id="efe43635164c7ee14d43b02ae0f87f8eb1516409">
   <div class="header">
     <h3>spec/features/list_bookmarks_spec.rb</h3>
     <h4>
