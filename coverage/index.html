@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-13T16:45:10+01:00">2021-10-13T16:45:10+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-10-14T14:26:32+01:00">2021-10-14T14:26:32+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -84,7 +84,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0fbff0d64e716eaaded97cc84d4fc71b2f0000e2" class="src_link" title="lib/bookmarks.rb">lib/bookmarks.rb</a></td>
             <td class="yellow strong cell--number t-file__coverage">84.62 %</td>
-            <td class="cell--number">25</td>
+            <td class="cell--number">28</td>
             <td class="cell--number">13</td>
             <td class="cell--number">11</td>
             <td class="cell--number">2</td>
@@ -734,7 +734,7 @@
 
             
 
-            <code class="ruby">    con.exec &quot;INSERT INTO bookmarks (url, title) VALUES (&#39;#{url}&#39;,&#39;#{title}&#39;)&quot;</code>
+            <code class="ruby">    con.exec_params(</code>
           </li>
         </div>
       
@@ -745,7 +745,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      &quot;INSERT INTO bookmarks (url, title) VALUES ($1, $2);&quot;, [url, title]</code>
           </li>
         </div>
       
@@ -756,7 +756,40 @@
 
             
 
+            <code class="ruby">    )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
             <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="28">
+            
+            
+
+            
+
+            <code class="ruby"> </code>
           </li>
         </div>
       
