@@ -34,6 +34,11 @@ As a user
 So that I can save a website
 I would like to add a site's url to the bookmark manager
 ```
+```
+As a user
+So that I can avoid storing old bookmarks
+I would like to be able to delete a bookmark
+```
 ![Sequence Diagram](https://drive.google.com/uc?export=view&id=1X71JC8pvlVaI8QYUA4i51mvQq3B_ysUe)
 
 
