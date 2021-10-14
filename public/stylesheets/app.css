@@ -1,16 +1,4 @@
-/* body {
-  background-color: #99ccff
-}
-h1 {
-  font-family: Helvetica
-}
-a {
-  font-family: Helvetica
-}
-form {
-  font-family: Helvetica
-} */
-h1 {
+/* h1 {
   font-family: Helvetica;
   text-align: center;
   padding: 3em;
@@ -153,4 +141,4 @@ form:hover {
 }
 a, input:focus, select:focus, textarea:focus, button:focus {
   outline: none;
-}
+} */
