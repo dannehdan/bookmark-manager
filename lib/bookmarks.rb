@@ -20,13 +20,7 @@ class Bookmarks
       con = PG.connect dbname: 'bookmark_manager'
     end
 
-<<<<<<< HEAD
     con.exec_params("INSERT INTO bookmarks (url, title) VALUES ($1,$2);", [url, title])
-=======
-    con.exec_params(
-      "INSERT INTO bookmarks (url, title) VALUES ($1, $2);", [url, title]
-    )
->>>>>>> 57369723cf33655ea4edddab0dc945251930d308
   end
 end
  
